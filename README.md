@@ -1,42 +1,52 @@
 # Independent Judgment
 
-一个用于学习督促与计划审查的中文 Codex Skill。依据目标、期限、实际负荷和产出作判断，直接指出差距，并给出可执行的调整。
+A free, open-source Codex skill for evidence-based judgment, realistic planning, and accountable follow-through. It helps an assistant challenge weak assumptions, track actual outputs, and adapt a plan without quietly abandoning the goal.
 
-## 用途
+## Free and Open Source
 
-- 用户希望助手避免迎合，独立评估观点和计划。
-- 学习任务未完成时，查明障碍、调整方法，并明确延期任务的具体去向。
-- 对升学和其他重要计划，区分事实、推断与未知，说明什么证据会改变判断。
+This project is freely available under the [MIT License](LICENSE). Use, modify, and redistribute it under the license terms. MIT also permits commercial use and requires preserving the copyright and license notice.
 
-严格执行以用户真实表达为准。助手不能把语音误解当作用户承诺，不能用羞辱或牺牲睡眠充当督促，也不能为了显得独立而无依据地唱反调。
+This repository has no paid installation, subscription, or payment integration.
 
-## 安装
+## When to Use It
 
-技能位于 `skills/independent-judgment/SKILL.md`。
+- You want honest pushback instead of automatic agreement.
+- A study plan or important commitment is drifting away from actual behavior.
+- Unfinished tasks need a realistic next date and clear completion criteria.
+- You need to separate facts, assumptions, uncertainty, and personal preferences.
 
-可以让 Codex 的技能安装器安装本仓库中的 `skills/independent-judgment`，或将该文件夹复制到你当前环境的技能目录。安装后，在技能列表中确认它可用。
+The skill respects the user's final decisions. It does not treat insults, sleep deprivation, or unnecessary interrogation as accountability.
 
-使用时输入：
+## Installation
+
+The skill is located at `skills/independent-judgment/SKILL.md`.
+
+Ask your skill installer to install `skills/independent-judgment` from this repository, or copy that folder into the skill directory supported by your environment. Confirm that it appears in the available skill list.
+
+Repository: https://github.com/huoyanbo2006-ui/independent-judgment-skill
+
+## Usage
 
 ```text
 $independent-judgment
-检查我的学习计划和实际完成情况，指出差距，并把未完成任务安排到具体时间。
+Review my study plan against what I actually completed. Identify the gaps,
+then propose concrete tasks, estimated durations, and dates for postponed work.
 ```
 
-技能支持按描述自动选择；是否自动加载取决于所用客户端。需要长期默认执行时，将对应简短规则加入当前环境的个人或项目指令。
+Automatic selection depends on the client and its skill discovery behavior. For persistent defaults, add the relevant short rules to your personal or project instructions.
 
-## 行为示例
+## Examples
 
-**用户：**“这两天没怎么学，今天又学不进去。”
+**User:** "I barely studied for two days and cannot focus today."
 
-**助手应做：**接受这份自报情况，核对期限和任务量，查明当前障碍；可以换方法、拆分启动步骤或合理挪时间，但说明调整对周目标的影响。不能自动把整天要求降成十分钟练习。
+**Expected behavior:** Accept the self-report, check the deadline and workload, identify the obstacle, and adjust the method or task placement. Explain the effect on the weekly goal. Do not automatically replace the entire day's work with a ten-minute exercise.
 
-**用户：**“今晚睡觉，明天正常安排。”
+**User:** "I am going to sleep tonight. Plan tomorrow normally."
 
-**助手应做：**尊重今晚休息的明确决定，按实际约束安排后续任务，不擅自添加用户没有承诺的补课时长，也不把休息记成已完成学习。
+**Expected behavior:** Respect the explicit rest decision, plan around actual constraints, and do not invent a catch-up commitment or record rest as completed study.
 
-## 限制
+## Limits
 
-这是工作流程与判断标准，不会产生独立人格，也不保证学习成绩或录取结果。文件格式校验仅验证技能结构；实际行为仍需在使用中核对。
+This is a workflow and assessment standard. It does not create an independent personality or guarantee grades, admission, or other outcomes. Structural validation checks the skill format, not the quality of every future judgment.
 
-仓库仅包含可复用的技能和使用说明，不包含私人学习记录、账号凭据或个人课表。
+The repository contains only the reusable skill, usage documentation, and license. It does not contain private study records, account credentials, or personal timetables.
